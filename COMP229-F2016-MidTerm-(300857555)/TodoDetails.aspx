@@ -20,9 +20,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="CompleteTextBox">Completed</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="CompleteTextBox" 
-                        placeholder="Complete" required="true" ></asp:TextBox>
+                    <label class="checkbox" for="CompleteCheckbox">Completed</label>
+                    <asp:Checkbox runat="server" CssClass="form-control" ID="CompleteCheckbox" 
+                        placeholder="Complete" required="true" ></asp:Checkbox>
                 </div>
 
                 <div class="text-right">

@@ -39,7 +39,7 @@ namespace COMP229_F2016_MidTerm__300857555_
                 {
                     TodoDescriptionTextBox.Text = updatedTodo.TodoDescription;
                     TodoNotesTextBox.Text = updatedTodo.TodoNotes;
-                    CompleteTextBox.Text = updatedTodo.Completed.ToString();
+                    CompleteCheckbox.Checked = updatedTodo.Completed;
                 }
             }
         }
@@ -69,7 +69,7 @@ namespace COMP229_F2016_MidTerm__300857555_
                 // add form data to the new Todo record
                 newTodo.TodoDescription = TodoDescriptionTextBox.Text;
                 newTodo.TodoNotes = TodoNotesTextBox.Text;
-                newTodo.Completed = Convert.ToBoolean(CompleteTextBox.Text);
+                newTodo.Completed = CompleteCheckbox.Checked;
 
                 // use LINQ to ADO.NET to add / insert new Todo into the db
 
