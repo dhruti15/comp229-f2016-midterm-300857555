@@ -1,5 +1,9 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="COMP229_F2016_MidTerm__300857555_.Site" %>
-
+<!--<summary>
+ Name : Dhruti Patel
+ Student Id : 300857555
+ Date Created : 19 October 2016
+ </summary>-->
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
