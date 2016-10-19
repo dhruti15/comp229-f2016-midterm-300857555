@@ -14,16 +14,20 @@
                     CssClass="table table-bordered table-striped table-hover" DataKeyNames="TodoID"
                     OnRowDeleting="TodoListGridView_RowDeleting" >
                     <Columns>
-                        <asp:TemplateField>
-                            <ItemTemplate>
-                                <asp:CheckBox ID="Complete" runat="server" />
-                            </ItemTemplate>
-                        </asp:TemplateField>
+                       
                         <asp:BoundField DataField="TodoID" HeaderText="Todo ID" Visible="true" />
                         <asp:BoundField DataField="TodoDescription" HeaderText="Todo" Visible="true" />
                         <asp:BoundField DataField="TodoNotes" HeaderText="Notes" Visible="true" />
-                        <asp:BoundField DataField="Completed" HeaderText="Completed" Visible="true" />
-
+                        
+                        
+                        <asp:TemplateField HeaderText="Completed">
+                            <EditItemTemplate>
+                                <asp:CheckBox ID="CheckBox1" Visible="true" runat="server" /> 
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:CheckBox ID="CheckBox1" Visible="true" runat="server" /> 
+                            </ItemTemplate>
+                            </asp:TemplateField>
                          <asp:HyperLinkField HeaderText="Edit" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Edit"
                             NavigateUrl="~/TodoDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm"
                             runat="server" DataNavigateUrlFields="TodoID"
